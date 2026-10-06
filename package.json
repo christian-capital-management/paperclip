@@ -93,6 +93,7 @@
     "agentmail": "^0.5.14",
     "cross-env": "^10.1.0",
     "esbuild": "^0.28.2",
+    "prisma": "8.0.0-rc.15",
     "typescript": "^7.0.2",
     "vitest": "^4.1.11"
   },
@@ -116,13 +117,26 @@
       "postgres@3.4.9": "patches/postgres@3.4.9.patch"
     },
     "overrides": {
-      "@agentclientprotocol/codex-acp@1.6.2>@openai/codex": "0.153.4",
       "@agentclientprotocol/claude-agent-acp@0.73.0>@anthropic-ai/claude-agent-sdk": "0.3.263",
-      "rollup": ">=4.59.0",
+      "@agentclientprotocol/codex-acp@1.6.2>@openai/codex": "0.153.4",
+      "@codemirror/state": "^6.7.2",
+      "@codemirror/view": "^6.43.11",
+      "@effect/platform-bun": "4.0.0-rc.112",
+      "@effect/platform-node": "4.0.0-rc.112",
+      "@effect/platform-node-shared": "4.0.0-rc.112",
+      "@effect/sql-d1": "4.0.0-rc.112",
+      "@effect/sql-pg": "4.0.0-rc.112",
+      "@effect/vitest": "4.0.0-rc.112",
+      "effect": "4.0.0-rc.112",
       "react": "^19.2.8",
       "react-dom": "^19.2.8",
-      "@codemirror/state": "^6.7.2",
-      "@codemirror/view": "^6.43.11"
+      "rollup": ">=4.59.0"
     }
+  },
+  "dependencies": {
+    "@prisma/composer": "0.20.0",
+    "@prisma/composer-prisma-cloud": "0.20.0",
+    "alchemy": "2.0.0-beta.74",
+    "effect": "4.0.0-rc.112"
   }
 }
